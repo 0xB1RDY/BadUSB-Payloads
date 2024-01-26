@@ -1,13 +1,10 @@
-REM ##############################
-REM #  ____  _         _         #
-REM # |  _ \(_)       | |        #
-REM # | |_) |_ _ __ __| |_   _   #
-REM # |  _ <| | '__/ _` | | | |  #
-REM # | |_) | | | | (_| | |_| |  # 
-REM # |____/|_|_|  \__,_|\__, |  #
-REM #                     __/ |  #
-REM #                    |___/   #
-REM ##############################
+REM ##########################               
+REM #  _____ _       _       #
+REM # | __  |_|___ _| |_ _   #
+REM # | __ -| |  _| . | | |  #
+REM # |_____|_|_| |___|_  |  #
+REM #                | ___|  #
+REM ##########################
 REM Title: Club Penguin YouTube Prank
 REM Description: Open a new tab in the browser, enter the dancing penguin URL, then fullscreen the video
 

